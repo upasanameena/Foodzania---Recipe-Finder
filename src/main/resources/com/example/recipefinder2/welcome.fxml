@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<StackPane alignment="CENTER" prefHeight="649.0" prefWidth="1081.0" style="-fx-background-color: white; -fx-border-color: green; -fx-border-style: dotted; -fx-border-width: 10;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="1035.0">
+      <children>
+         <ImageView fitHeight="726.0" fitWidth="1081.0" layoutX="-2.0" layoutY="-97.0" preserveRatio="true">
+            <image>
+               <Image url="@images/img_1.png" />
+            </image></ImageView>
+         
+
+         <Label fx:id="welcomeLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="428.0" layoutY="240.0" prefHeight="38.0" prefWidth="166.0" style="-fx-text-fill: white; -fx-font-size: 16px; -fx-background-color: #7a0909;" text="START COOKING!!" textAlignment="CENTER">
+            <styleClass>
+               <String fx:value="welcome-label" />
+               <String fx:value="stack-pane" />
+            </styleClass>
+            <padding>
+               <Insets top="4.0" />
+            </padding>
+            <effect>
+               <Bloom threshold="0.18" />
+            </effect>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="363.0" layoutY="163.0" lineSpacing="2.0" prefHeight="60.0" prefWidth="300.0" style="-fx-font-size: 40PX; -fx-font-weight: BOLD; -fx-font-family: arial;" text="FOODZANIA" textAlignment="CENTER">
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.15457412948367724" startY="0.23343846173692576">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.22032000124454498" green="0.8100000023841858" blue="0.07289999723434448" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.012358814863316431">
+                        <color>
+                           <Color red="0.22032000124454498" green="0.8100000023841858" blue="0.07289999723434448" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.23717738855240902">
+                        <color>
+                           <Color />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.34959349593495936">
+                        <color>
+                           <Color red="0.9300000071525574" green="0.9300000071525574" blue="0.9300000071525574" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.4525972608719377">
+                        <color>
+                           <Color red="0.8100000023841858" green="0.23185180127620697" blue="0.07289999723434448" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.7069351230425055">
+                        <color>
+                           <Color red="0.22157244384288788" green="0.8157894611358643" blue="0.07301819324493408" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.959731543624161">
+                        <color>
+                           <Color />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.9381619691848755" green="0.9385964870452881" blue="0.9356995820999146" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Label>
+         <Label layoutX="361.0" layoutY="327.0" prefHeight="30.0" prefWidth="315.0" style="-fx-font-size: 16PX; -fx-font-family: ARIAL;" text="Explore a world of flavors and recipes!....." textFill="#08741a" />
+      </children>
+   </Pane>
+</StackPane>

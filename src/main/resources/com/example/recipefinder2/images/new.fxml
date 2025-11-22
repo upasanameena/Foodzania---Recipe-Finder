@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20" style="-fx-background-color: #f0f8ff;" xmlns="http://javafx.com/javafx/22">
+
+    <!-- Title -->
+    <Label style="-fx-font-size: 24; -fx-font-weight: bold;" text="Recipe Gallery" />
+
+    <!-- GridPane to hold images and their text -->
+    <GridPane alignment="CENTER" hgap="20" vgap="20">
+        <!-- Row 1 -->
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="@onion.jpg" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 1" />
+        </VBox>
+
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="@ice.jpg" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 2" />
+        </VBox>
+
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="pan.jpg" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 3" />
+        </VBox>
+
+        <!-- Row 2 -->
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="@papad.jpg" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 4" />
+        </VBox>
+
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="@rol.jpg" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 5" />
+        </VBox>
+
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="@sm.jpg" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 6" />
+        </VBox>
+
+        <!-- Row 3 -->
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="@soup.jpg" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 7" />
+        </VBox>
+
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="@coinpizza.jpg" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 8" />
+        </VBox>
+
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="@onion.jpg" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 9" />
+        </VBox>
+
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150">
+                <Image url="@choco.png" />
+            </ImageView>
+            <Label style="-fx-font-size: 16;" text="Recipe 10" />
+        </VBox>
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+</VBox>

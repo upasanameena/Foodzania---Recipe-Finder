@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.recipefinder2.FoodZaniaHelloController">
+    <center>
+        <StackPane alignment="CENTER" style="-fx-background-color: white;">
+            <!-- Background Image -->
+            <ImageView fitHeight="694.0" fitWidth="1128.0" preserveRatio="true">
+                <image>
+                    <Image url="@images/img_1.png" />
+                </image></ImageView>
+
+            <!-- Overlay Components -->
+            <VBox alignment="CENTER" prefWidth="1089.0" spacing="20" style="-fx-padding: 20;">
+                <HBox alignment="CENTER" spacing="20" style="-fx-padding: 20;">
+                    <Text style="-fx-font-size: 30px; -fx-font-weight: bold;" text="FoodZania" textAlignment="CENTER">
+                        <effect>
+                            <Lighting>
+                                <bumpInput>
+                                    <Shadow />
+                                </bumpInput>
+                            </Lighting>
+                        </effect>
+                        <fill>
+                            <LinearGradient endX="1.0" endY="1.0">
+                                <stops>
+                                    <Stop>
+                                        <color>
+                                            <Color red="0.5753333568572998" green="1.0" blue="0.019999999552965164" />
+                                        </color>
+                                    </Stop>
+                                    <Stop offset="0.3087248322147651">
+                                        <color>
+                                            <Color red="0.5753333568572998" green="1.0" blue="0.019999999552965164" />
+                                        </color>
+                                    </Stop>
+                                    <Stop offset="0.487695749440716">
+                                        <color>
+                                            <Color red="1.0" green="1.0" blue="1.0" />
+                                        </color>
+                                    </Stop>
+                                    <Stop offset="0.7577617722485951">
+                                        <color>
+                                            <Color red="0.8799999952316284" green="0.052799999713897705" blue="0.06329302489757538" opacity="0.9800000190734863" />
+                                        </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                        <color>
+                                            <Color red="0.8799999952316284" green="0.052799999713897705" blue="0.06329302489757538" opacity="0.9800000190734863" />
+                                        </color>
+                                    </Stop>
+                                </stops>
+                            </LinearGradient>
+                        </fill>
+                    </Text>
+                </HBox>
+                <Button fx:id="startCookingButton" style="-fx-font-size: 16px; -fx-background-color: #7a0909; -fx-text-fill: white;" text="Start Cooking" />
+                <HBox alignment="CENTER" spacing="20" style="-fx-padding: 20;">
+                    <Text fill="#307b16" style="-fx-font-size: 16px; -fx-font-family: arial;" text="Explore a world of flavors and recipes!" />
+                </HBox>
+            </VBox>
+        </StackPane>
+    </center>
+</BorderPane>

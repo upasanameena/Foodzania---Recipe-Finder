@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="659.0" prefWidth="807.0" spacing="20" style="-fx-background-color: #abdbba;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.recipefinder2.FoodZaniaHelloController">
+
+   <!-- Button Section stacked on top-left -->
+   <VBox alignment="TOP_LEFT" spacing="10">
+      <Button fx:id="navigateButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openHomepage" prefHeight="33.0" prefWidth="106.0" style="-fx-background-color: WHITE; -fx-text-fill: BLUE; -fx-border-color: BLUE;" text="HOME">
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="anujapage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openRecipe" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: WHITE; -fx-text-fill: BLUE; -fx-border-color: BLUE;" text="READYMADE">
+         <VBox.margin>
+            <Insets left="10.0" top="-10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="6.0" />
+         </padding>
+      </Button>
+   </VBox>
+
+   <!-- Title in the exact center -->
+   <Label alignment="CENTER" prefHeight="71.0" prefWidth="433.0" style="-fx-font-size: 40; -fx-font-weight: bold; -fx-background-radius: 2PX;" text="🍛FOODZANIA🍜">
+      <font>
+         <Font name="System Italic" size="59.0" />
+      </font>
+      <textFill>
+         <LinearGradient cycleMethod="REFLECT" startX="0.5741324921135647">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.018200000748038292" green="0.6667819619178772" blue="0.9100000262260437" />
+                  </color>
+               </Stop>
+               <Stop offset="0.08501118568232661">
+                  <color>
+                     <Color red="0.018200000748038292" green="0.6667819619178772" blue="0.9100000262260437" />
+                  </color>
+               </Stop>
+               <Stop offset="0.23641348829595682">
+                  <color>
+                     <Color red="0.10661952942609787" green="0.035599999129772186" blue="0.8899999856948853" opacity="0.9900000095367432" />
+                  </color>
+               </Stop>
+               <Stop offset="0.4099143340426693">
+                  <color>
+                     <Color red="0.8799999952316284" green="0.03519999980926514" blue="0.8067721128463745" opacity="0.9900000095367432" />
+                  </color>
+               </Stop>
+               <Stop offset="0.6831041632563977">
+                  <color>
+                     <Color red="0.8799999952316284" green="0.03519999980926514" blue="0.8095999956130981" opacity="0.9900000095367432" />
+                  </color>
+               </Stop>
+               <Stop offset="0.8501118568232662">
+                  <color>
+                     <Color red="0.10599686205387115" green="0.859649121761322" blue="0.06633095443248749" opacity="0.9900000095367432" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.10599686205387115" green="0.859649121761322" blue="0.06633095443248749" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+
+   <!-- Ingredient Input Section -->
+   <HBox alignment="CENTER" spacing="10">
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="237.0" style="-fx-font-size: 20; -fx-text-fill: BLUE; -fx-padding: 3;" text="Enter Ingredients🍲:" textOverrun="LEADING_ELLIPSIS">
+         <effect>
+            <Bloom />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ingredientInput" prefHeight="36.0" prefWidth="293.0" promptText="Enter ingredients (comma separated)" style="-fx-padding: 8; -fx-border-radius: 5; -fx-background-radius: 5; -fx-background-color: white; -fx-border-style: dotted; -fx-border-color: red;" />
+      <Button fx:id="findRecipesButton" prefHeight="39.0" prefWidth="133.0" style="-fx-background-color: white; -fx-text-fill: purple; -fx-padding: 10px 20px; -fx-background-radius: 8; -fx-border-color: blue; -fx-border-style: dashed; -fx-border-width: 2;" text="Find Recipes" />
+   </HBox>
+
+   <!-- Recipes Display Section -->
+   <Label alignment="CENTER" prefHeight="19.0" prefWidth="188.0" style="-fx-font-size: 16; -fx-text-fill: blue; -fx-font-family: arial; -fx-background-color: pink; -fx-padding: 3;" text="Recipes you can make:" />
+   <ListView fx:id="recipeListView" prefHeight="417.0" prefWidth="807.0" style="-fx-border-width: 2px; -fx-border-width: 2; -fx-border-color: #e615db; -fx-background-color: beige;">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </ListView>
+
+   <effect>
+      <Glow />
+   </effect>
+
+</VBox>

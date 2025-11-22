@@ -1,0 +1,9 @@
+
+/* Custom label style */
+.welcome-label {
+    -fx-font-family: "Brush Script MT", cursive; /* Calligraphic font */
+    -fx-font-size: 50px;
+    -fx-text-fill: blue; /* Blue text by default */
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 10, 0.5, 0, 0); /* Glow effect */
+}
+
