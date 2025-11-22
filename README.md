@@ -10,13 +10,56 @@ A JavaFX-based desktop application that helps you find recipes based on availabl
 - **Recipe Gallery**: Browse ready-made recipes
 - **Welcome Page**: User-friendly welcome screen
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies & Libraries Used
 
-- **Java 22**
-- **JavaFX 22.0.1** - For the desktop GUI
-- **MySQL** - Database for recipe storage
-- **Maven** - Dependency management
-- **ControlsFX** - Enhanced UI controls
+### Frontend (UI/Desktop Application)
+
+#### Core JavaFX Libraries (v22.0.1)
+- **javafx-controls** - UI controls (Button, Label, TextField, ListView, etc.)
+- **javafx-fxml** - FXML for declarative UI layout
+- **javafx-web** - WebView support for embedded web content
+- **javafx-swing** - Swing interoperability
+- **javafx-media** - Media playback support
+
+#### UI Enhancement Libraries
+- **ControlsFX (v11.2.1)** - Additional enhanced JavaFX controls and components
+
+#### UI Components & Technologies
+- **FXML** - XML-based UI markup language for JavaFX
+- **CSS** - Custom stylesheets (styles.css, styles1.css) for UI styling
+- **JavaFX Layouts**: VBox, HBox, StackPane, BorderPane, GridPane
+- **JavaFX Effects**: Bloom, Glow, Lighting, Shadow
+- **ImageView** - For displaying images in the UI
+
+### Backend (Database & Logic)
+
+#### Database
+- **MySQL Connector/J (v8.0.30)** - JDBC driver for MySQL database connectivity
+- **MySQL** - Relational database management system
+- **JDBC API** - Java Database Connectivity for database operations
+
+#### Java Standard Libraries
+- **java.sql** - Database operations (Connection, PreparedStatement, ResultSet)
+- **java.util** - Collections framework (ArrayList, HashMap, List, Map)
+- **java.io** - File I/O operations
+
+### Build Tools & Plugins
+
+- **Maven** - Dependency management and build automation
+- **Maven Compiler Plugin (v3.13.0)** - Java 22 compilation
+- **JavaFX Maven Plugin (v0.0.8)** - JavaFX application packaging and execution
+
+### Testing Framework
+
+- **JUnit Jupiter (v5.10.2)**
+  - junit-jupiter-api - Testing API
+  - junit-jupiter-engine - Test execution engine
+
+### Core Technologies
+
+- **Java 22** - Programming language and runtime
+- **JavaFX 22.0.1** - Desktop application framework
+- **Maven** - Build automation and project management
 
 ## 📋 Prerequisites
 
